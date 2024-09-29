@@ -1,16 +1,54 @@
-# pr_4
+# Практическая работа № 4 (Программирование корпоративных систем)
 
-A new Flutter project.
+## Полошкова Анастасия ЭФБО-01-22
 
-## Getting Started
+### Описание и выполнение работы
 
-This project is a starting point for a Flutter application.
+В данной работе необходимо было добавить к уже созданному каталогу возможность его редактирования (удаление существующего товара и добавление нового).
 
-A few resources to get you started if this is your first Flutter project:
+В ходе работы была создана дополнительная страница с формой добавления информации о товаре. А также была изменена главная страница с каталогом товаров.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1) Главный экран с каталогом.
+На данной странице находятся карточки с настольными играми, при нажатии на которые можно прочесть полную информацию.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src = 'https://github.com/user-attachments/assets/14641dda-17bd-4a96-b058-d57e9456ae25' width = 300/>
+
+Если нажать на иконку корзины рядом с карточкой, то появится уведомление для подтверждения или отмены удаления данного товара.
+
+<img src = 'https://github.com/user-attachments/assets/ef1669a6-ec00-446f-a77f-65b43901b93e' width = 300/>
+
+Если на главной странице удалить все товары, то появиться запись, уведомляющая об отсутствии доступных карточек.
+
+<img src = 'https://github.com/user-attachments/assets/8d978111-0100-4417-9027-e2a3213e0e79' width = 300/>
+
+Также внизу страницы находиться кнопка добавления нового товара, которая перенаправляет пользователя на страницу добавления новой игры.
+
+2) Экран добавления.
+<img src = 'https://github.com/user-attachments/assets/009241c3-da6a-4e6e-9380-ad1ea57c839c' width = 300/>
+
+О форме:
+1. Обязательные поля: URL картинки, название товара и цвет карточки. Без этих данных карточку невозможно создать.
+2. Формат ввода:
+   - название товара: текст
+   - цена: число
+   - возрастное ограничение: число
+   - описание товара: текст (не более двух предложений)
+   - среднее время на игру: строка (пример, 15-25 минут)
+   - количество игроков: строка (пример, 1-4 игрока)
+   - правила игры: текст
+3. После заполнения обязательных полей появится визуальное представление карточки
+<img src = 'https://github.com/user-attachments/assets/27b5840d-71f3-4c44-8170-e67c24760fb5' width = 300/>
+
+4. При редактировании информации визуальный прототип карточки изменяется сразу.
+<img src = 'https://github.com/user-attachments/assets/996073ad-0748-4999-bc8e-7f364c903dfc' width = 300/>
+
+Примеры ввода данных в неосновные поля:
+
+<img src = 'https://github.com/user-attachments/assets/86e4a906-82b9-4528-9e4e-1b5229f62a11' width = 300/>
+
+<img src = 'https://github.com/user-attachments/assets/9e3c7a15-59b6-4d01-abd6-e145839a79a8' width = 300/>
+
+3) После нажатии кнопки "Добавить игру". Пользователь возвращается на главную страницу, где может просмотреть созданную карточку.
+<img src = 'https://github.com/user-attachments/assets/d4aca501-c331-4f2c-8986-446d95cfec40' width = 300/>
+
+<img src = 'https://github.com/user-attachments/assets/3c8acd1a-28bf-4762-8e5f-2d4d043aaa95' width = 300/>
